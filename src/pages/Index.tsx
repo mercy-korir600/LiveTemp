@@ -76,14 +76,14 @@ const Index = () => {
 
     const getGroupColor = (groupName: string): string => {
       const colors = [
-        '#3B82F6', // blue
-        '#10B981', // emerald
-        '#F59E0B', // amber
-        '#EF4444', // red
-        '#8B5CF6', // violet
-        '#06B6D4', // cyan
-        '#84CC16', // lime
-        '#F97316', // orange
+        '#10B981', // emerald-500
+        '#059669', // emerald-600
+        '#047857', // emerald-700
+        '#065F46', // emerald-800
+        '#6EE7B7', // emerald-300
+        '#A7F3D0', // emerald-200
+        '#34D399', // emerald-400
+        '#D1FAE5', // emerald-100
       ];
       
       // Simple hash function to assign consistent colors to groups
@@ -161,10 +161,10 @@ const Index = () => {
         </main>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .dashboard {
           min-height: 100vh;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10B981 0%, #047857 100%);
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
@@ -183,7 +183,7 @@ const Index = () => {
           margin: 0;
           font-size: 2rem;
           font-weight: 700;
-          background: linear-gradient(135deg, #667eea, #764ba2);
+          background: linear-gradient(135deg, #10B981, #047857);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -274,7 +274,7 @@ const Index = () => {
           background: white;
           border-radius: 12px;
           padding: 1.5rem;
-          border-left: 4px solid #3b82f6;
+          border-left: 4px solid #10B981;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
           transition: transform 0.2s ease, box-shadow 0.2s ease;
           animation: slideIn 0.3s ease-out;
